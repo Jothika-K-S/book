@@ -6,7 +6,7 @@ const BookContainer = () => {
     const [books, setBooks] = useState([])
     useEffect(() => {
         const fetchAllBooks = async() => {
-            const bookData = await fetch('http://localhost:3500/api/books')
+            const bookData = await fetch('https://appsail-50037828679.development.catalystappsail.in/api/books')
             const {data} = await bookData.json()
             console.log(data)
             setBooks(data)
