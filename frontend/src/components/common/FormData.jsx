@@ -18,7 +18,7 @@ const FormData = () => {
         const updateBook = async() => {
         try{
             if(id){
-                const editBook = await fetch(`http://localhost:3500/api/books/${id}`)
+                const editBook = await fetch(`https://appsail-50037828679.development.catalystappsail.in/api/books/${id}`)
                 const {title, author,description,image,genre,rating,buy} = await editBook.json()
                 setTitle(title)
                 setAuthor(author)
@@ -48,10 +48,9 @@ const FormData = () => {
         }
        try{
         if(id){
-           return axios.put(`http://localhost:3500/api/books/${id}`, bookData)
+           return axios.put(`https://appsail-50037828679.development.catalystappsail.in/api/books/${id}`, bookData)
         }
-        return axios.post('http://localhost:3500/api/books', bookData)
-        navigate('/')
+        return axios.post('https://appsail-50037828679.development.catalystappsail.in/api/books', bookData)
        }catch(err){
         console.log(err)
        }
