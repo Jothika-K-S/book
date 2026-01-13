@@ -20,7 +20,7 @@ const DeletePopUp = () => {
 
     useEffect(()=> {
         const fetchBook = async() => {
-            const getBookImage = await fetch(`http://localhost:3500/api/books/${id}`)
+            const getBookImage = await fetch(`https://appsail-50037828679.development.catalystappsail.in/api/books/${id}`)
             const {image} = await getBookImage.json()
             setImage(image)
         }
