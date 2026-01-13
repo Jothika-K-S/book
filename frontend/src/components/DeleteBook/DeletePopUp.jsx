@@ -10,7 +10,7 @@ const DeletePopUp = () => {
 
     const handleDeleteBook = async() => {
         try {
-        axios.delete(`http://localhost:3500/api/books/${id}`)
+        axios.delete(`https://appsail-50037828679.development.catalystappsail.in/api/books/${id}`)
         navigate('/')
         }
         catch(err){
