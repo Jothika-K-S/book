@@ -1,0 +1,10 @@
+{
+	"command": "node server.js",
+	"build_path": "C:\\Users\\Admin\\Downloads\\Book-App-main\\backend",
+	"stack": "node20",
+	"env_variables": {
+		"MONGO_URI": "mongodb+srv://jothikakanthuluvaseenivasan:OFffSxzNgLOyHw2R@practice.ih5tixr.mongodb.net/books-collection?retryWrites=true&w=majority&appName=practice"
+	},
+	"memory": 256,
+	"scripts": {}
+}

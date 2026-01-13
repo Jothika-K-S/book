@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "18962000000011170",
+      "name": "Book-App",
+      "domain": {
+        "id": "50037828679",
+        "name": "book-app-60063547328.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60063547328",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
