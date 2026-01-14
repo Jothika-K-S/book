@@ -9,7 +9,7 @@ const BookDetailContainer = () => {
     console.log(showBookDetails)
     useEffect(()=> {
       const fetchBookDetail = async() => {
-        const fetchSingleBook = await fetch(`https://appsail-50037828679.development.catalystappsail.in/api/books/${id}`)
+        const fetchSingleBook = await fetch(`https://bookmanagement.development.catalystappsail.in/api/books/${id}`)
         const data = await fetchSingleBook.json()
         console.log(data)
         setShowBookDetails(data)
