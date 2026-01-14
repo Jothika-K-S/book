@@ -10,7 +10,7 @@ const DeletePopUp = () => {
 
     const handleDeleteBook = async() => {
         try {
-        axios.delete(`https://appsail-50037828679.development.catalystappsail.in/api/books/${id}`)
+        axios.delete(`https://bookmanagement.development.catalystappsail.in/api/books/${id}`)
         navigate('/')
         }
         catch(err){
@@ -20,7 +20,7 @@ const DeletePopUp = () => {
 
     useEffect(()=> {
         const fetchBook = async() => {
-            const getBookImage = await fetch(`https://appsail-50037828679.development.catalystappsail.in/api/books/${id}`)
+            const getBookImage = await fetch(`https://bookmanagement.development.catalystappsail.in/api/books/${id}`)
             const {image} = await getBookImage.json()
             setImage(image)
         }
